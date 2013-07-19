@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A7D5171797EB5E00F0A651 /* GamePad.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A7D5161797EB5E00F0A651 /* GamePad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14A7D5221797EB6800F0A651 /* GamePad.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14A7D5181797EB6800F0A651 /* GamePad.mm */; };
+		14A7D5241797EB6800F0A651 /* GamePadManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14A7D51A1797EB6800F0A651 /* GamePadManager.mm */; };
+		14A7D5251797EB6800F0A651 /* GamePadPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A7D51B1797EB6800F0A651 /* GamePadPrivate.h */; };
+		14A7D5261797EB6800F0A651 /* HIDDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A7D51C1797EB6800F0A651 /* HIDDevice.h */; };
+		14A7D5271797EB6800F0A651 /* HIDDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14A7D51D1797EB6800F0A651 /* HIDDevice.mm */; };
+		14A7D5281797EB6800F0A651 /* HIDElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A7D51E1797EB6800F0A651 /* HIDElement.h */; };
+		14A7D5291797EB6800F0A651 /* HIDElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14A7D51F1797EB6800F0A651 /* HIDElement.mm */; };
+		14A7D52A1797EB6800F0A651 /* ThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A7D5201797EB6800F0A651 /* ThreadUtil.h */; };
+		14A7D52B1797EB6800F0A651 /* ThreadUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14A7D5211797EB6800F0A651 /* ThreadUtil.mm */; };
+		14B91E54179742D3007E497A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14B91E52179742D3007E497A /* InfoPlist.strings */; };
+		14B91E6C17974572007E497A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CF50BE1795536300D902C6 /* IOKit.framework */; };
+		14B91E8B179747F2007E497A /* GamePad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B91E4D179742D2007E497A /* GamePad.framework */; };
+		14B91E8D179748A4007E497A /* GamePad.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14B91E4D179742D2007E497A /* GamePad.framework */; };
+		14B91E9617976E06007E497A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CF50861795501000D902C6 /* Foundation.framework */; };
+		F0CF50821795501000D902C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CF50811795501000D902C6 /* Cocoa.framework */; };
+		F0CF508C1795501000D902C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0CF508A1795501000D902C6 /* InfoPlist.strings */; };
+		F0CF508E1795501000D902C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CF508D1795501000D902C6 /* main.m */; };
+		F0CF50921795501000D902C6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F0CF50901795501000D902C6 /* Credits.rtf */; };
+		F0CF50951795501000D902C6 /* GamepadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CF50941795501000D902C6 /* GamepadAppDelegate.m */; };
+		F0CF50981795501000D902C6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CF50961795501000D902C6 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14B91E6E179746E2007E497A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CF50761795500F00D902C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B91E4C179742D2007E497A;
+			remoteInfo = GamePad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14B91E8C17974899007E497A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14B91E8D179748A4007E497A /* GamePad.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14A7D5161797EB5E00F0A651 /* GamePad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePad.h; path = Gamepad/GamePad/public/GamePad.h; sourceTree = SOURCE_ROOT; };
+		14A7D5181797EB6800F0A651 /* GamePad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GamePad.mm; path = Gamepad/GamePad/private/GamePad.mm; sourceTree = SOURCE_ROOT; };
+		14A7D51A1797EB6800F0A651 /* GamePadManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GamePadManager.mm; path = Gamepad/GamePad/private/GamePadManager.mm; sourceTree = SOURCE_ROOT; };
+		14A7D51B1797EB6800F0A651 /* GamePadPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePadPrivate.h; path = Gamepad/GamePad/private/GamePadPrivate.h; sourceTree = SOURCE_ROOT; };
+		14A7D51C1797EB6800F0A651 /* HIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDDevice.h; path = Gamepad/GamePad/private/HIDDevice.h; sourceTree = SOURCE_ROOT; };
+		14A7D51D1797EB6800F0A651 /* HIDDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HIDDevice.mm; path = Gamepad/GamePad/private/HIDDevice.mm; sourceTree = SOURCE_ROOT; };
+		14A7D51E1797EB6800F0A651 /* HIDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDElement.h; path = Gamepad/GamePad/private/HIDElement.h; sourceTree = SOURCE_ROOT; };
+		14A7D51F1797EB6800F0A651 /* HIDElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HIDElement.mm; path = Gamepad/GamePad/private/HIDElement.mm; sourceTree = SOURCE_ROOT; };
+		14A7D5201797EB6800F0A651 /* ThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadUtil.h; path = Gamepad/GamePad/private/ThreadUtil.h; sourceTree = SOURCE_ROOT; };
+		14A7D5211797EB6800F0A651 /* ThreadUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ThreadUtil.mm; path = Gamepad/GamePad/private/ThreadUtil.mm; sourceTree = SOURCE_ROOT; };
+		14B91E4D179742D2007E497A /* GamePad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GamePad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B91E53179742D3007E497A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14B91E55179742D3007E497A /* GamePad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GamePad-Prefix.pch"; sourceTree = "<group>"; };
+		14B91E8E17974A7D007E497A /* GamePad-Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GamePad-Sample-Info.plist"; sourceTree = "<group>"; };
+		14B91E9017974AC7007E497A /* GamePad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GamePad-Info.plist"; path = "Gamepad/GamePad/GamePad-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F0CF507E1795500F00D902C6 /* Gamepad Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamepad Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CF50811795501000D902C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F0CF50841795501000D902C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F0CF50851795501000D902C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F0CF50861795501000D902C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0CF508B1795501000D902C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0CF508D1795501000D902C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0CF508F1795501000D902C6 /* Gamepad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gamepad-Prefix.pch"; sourceTree = "<group>"; };
+		F0CF50911795501000D902C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F0CF50931795501000D902C6 /* GamepadAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamepadAppDelegate.h; sourceTree = "<group>"; };
+		F0CF50941795501000D902C6 /* GamepadAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamepadAppDelegate.m; sourceTree = "<group>"; };
+		F0CF50971795501000D902C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F0CF50BE1795536300D902C6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14B91E49179742D2007E497A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B91E6C17974572007E497A /* IOKit.framework in Frameworks */,
+				14B91E9617976E06007E497A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CF507B1795500F00D902C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CF50821795501000D902C6 /* Cocoa.framework in Frameworks */,
+				14B91E8B179747F2007E497A /* GamePad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A7D5141797EB4A00F0A651 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				14A7D51B1797EB6800F0A651 /* GamePadPrivate.h */,
+				14A7D51A1797EB6800F0A651 /* GamePadManager.mm */,
+				14A7D5181797EB6800F0A651 /* GamePad.mm */,
+				14A7D51C1797EB6800F0A651 /* HIDDevice.h */,
+				14A7D51D1797EB6800F0A651 /* HIDDevice.mm */,
+				14A7D51E1797EB6800F0A651 /* HIDElement.h */,
+				14A7D51F1797EB6800F0A651 /* HIDElement.mm */,
+				14A7D5201797EB6800F0A651 /* ThreadUtil.h */,
+				14A7D5211797EB6800F0A651 /* ThreadUtil.mm */,
+			);
+			name = private;
+			sourceTree = "<group>";
+		};
+		14A7D5151797EB5200F0A651 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				14A7D5161797EB5E00F0A651 /* GamePad.h */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		14B91E4F179742D3007E497A /* GamePad */ = {
+			isa = PBXGroup;
+			children = (
+				14A7D5151797EB5200F0A651 /* public */,
+				14A7D5141797EB4A00F0A651 /* private */,
+				14B91E50179742D3007E497A /* Supporting Files */,
+			);
+			path = GamePad;
+			sourceTree = "<group>";
+		};
+		14B91E50179742D3007E497A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14B91E9017974AC7007E497A /* GamePad-Info.plist */,
+				14B91E52179742D3007E497A /* InfoPlist.strings */,
+				14B91E55179742D3007E497A /* GamePad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0CF50751795500F00D902C6 = {
+			isa = PBXGroup;
+			children = (
+				F0CF50871795501000D902C6 /* Sample */,
+				14B91E4F179742D3007E497A /* GamePad */,
+				F0CF50801795500F00D902C6 /* Frameworks */,
+				F0CF507F1795500F00D902C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0CF507F1795500F00D902C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CF507E1795500F00D902C6 /* Gamepad Sample.app */,
+				14B91E4D179742D2007E497A /* GamePad.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0CF50801795500F00D902C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0CF50BE1795536300D902C6 /* IOKit.framework */,
+				F0CF50811795501000D902C6 /* Cocoa.framework */,
+				F0CF50831795501000D902C6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0CF50831795501000D902C6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0CF50841795501000D902C6 /* AppKit.framework */,
+				F0CF50851795501000D902C6 /* CoreData.framework */,
+				F0CF50861795501000D902C6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F0CF50871795501000D902C6 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				F0CF50931795501000D902C6 /* GamepadAppDelegate.h */,
+				F0CF50941795501000D902C6 /* GamepadAppDelegate.m */,
+				F0CF50961795501000D902C6 /* MainMenu.xib */,
+				F0CF50881795501000D902C6 /* Supporting Files */,
+			);
+			name = Sample;
+			path = Gamepad;
+			sourceTree = "<group>";
+		};
+		F0CF50881795501000D902C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14B91E8E17974A7D007E497A /* GamePad-Sample-Info.plist */,
+				F0CF508A1795501000D902C6 /* InfoPlist.strings */,
+				F0CF508D1795501000D902C6 /* main.m */,
+				F0CF508F1795501000D902C6 /* Gamepad-Prefix.pch */,
+				F0CF50901795501000D902C6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14B91E4A179742D2007E497A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A7D5171797EB5E00F0A651 /* GamePad.h in Headers */,
+				14A7D5251797EB6800F0A651 /* GamePadPrivate.h in Headers */,
+				14A7D5261797EB6800F0A651 /* HIDDevice.h in Headers */,
+				14A7D5281797EB6800F0A651 /* HIDElement.h in Headers */,
+				14A7D52A1797EB6800F0A651 /* ThreadUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14B91E4C179742D2007E497A /* GamePad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B91E5B179742D3007E497A /* Build configuration list for PBXNativeTarget "GamePad" */;
+			buildPhases = (
+				14B91E48179742D2007E497A /* Sources */,
+				14B91E49179742D2007E497A /* Frameworks */,
+				14B91E4A179742D2007E497A /* Headers */,
+				14B91E4B179742D2007E497A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GamePad;
+			productName = GamePad;
+			productReference = 14B91E4D179742D2007E497A /* GamePad.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0CF507D1795500F00D902C6 /* Gamepad Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CF509B1795501000D902C6 /* Build configuration list for PBXNativeTarget "Gamepad Sample" */;
+			buildPhases = (
+				F0CF507A1795500F00D902C6 /* Sources */,
+				F0CF507B1795500F00D902C6 /* Frameworks */,
+				F0CF507C1795500F00D902C6 /* Resources */,
+				14B91E8C17974899007E497A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B91E6F179746E2007E497A /* PBXTargetDependency */,
+			);
+			name = "Gamepad Sample";
+			productName = Gamepad;
+			productReference = F0CF507E1795500F00D902C6 /* Gamepad Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0CF50761795500F00D902C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Gamepad;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = amandravin;
+			};
+			buildConfigurationList = F0CF50791795500F00D902C6 /* Build configuration list for PBXProject "Gamepad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F0CF50751795500F00D902C6;
+			productRefGroup = F0CF507F1795500F00D902C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0CF507D1795500F00D902C6 /* Gamepad Sample */,
+				14B91E4C179742D2007E497A /* GamePad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14B91E4B179742D2007E497A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B91E54179742D3007E497A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CF507C1795500F00D902C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CF508C1795501000D902C6 /* InfoPlist.strings in Resources */,
+				F0CF50921795501000D902C6 /* Credits.rtf in Resources */,
+				F0CF50981795501000D902C6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B91E48179742D2007E497A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A7D5221797EB6800F0A651 /* GamePad.mm in Sources */,
+				14A7D5241797EB6800F0A651 /* GamePadManager.mm in Sources */,
+				14A7D5271797EB6800F0A651 /* HIDDevice.mm in Sources */,
+				14A7D5291797EB6800F0A651 /* HIDElement.mm in Sources */,
+				14A7D52B1797EB6800F0A651 /* ThreadUtil.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CF507A1795500F00D902C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CF508E1795501000D902C6 /* main.m in Sources */,
+				F0CF50951795501000D902C6 /* GamepadAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14B91E6F179746E2007E497A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B91E4C179742D2007E497A /* GamePad */;
+			targetProxy = 14B91E6E179746E2007E497A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14B91E52179742D3007E497A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B91E53179742D3007E497A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F0CF508A1795501000D902C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CF508B1795501000D902C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F0CF50901795501000D902C6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CF50911795501000D902C6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F0CF50961795501000D902C6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CF50971795501000D902C6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14B91E59179742D3007E497A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamePad/GamePad-Prefix.pch";
+				INFOPLIST_FILE = "GamePad/GamePad/GamePad-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		14B91E5A179742D3007E497A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GamePad/GamePad-Prefix.pch";
+				INFOPLIST_FILE = "GamePad/GamePad/GamePad-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		F0CF50991795501000D902C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F0CF509A1795501000D902C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0CF509C1795501000D902C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gamepad/Gamepad-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Gamepad/GamePad-Sample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F0CF509D1795501000D902C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gamepad/Gamepad-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Gamepad/GamePad-Sample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B91E5B179742D3007E497A /* Build configuration list for PBXNativeTarget "GamePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B91E59179742D3007E497A /* Debug */,
+				14B91E5A179742D3007E497A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CF50791795500F00D902C6 /* Build configuration list for PBXProject "Gamepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CF50991795501000D902C6 /* Debug */,
+				F0CF509A1795501000D902C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CF509B1795501000D902C6 /* Build configuration list for PBXNativeTarget "Gamepad Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CF509C1795501000D902C6 /* Debug */,
+				F0CF509D1795501000D902C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0CF50761795500F00D902C6 /* Project object */;
+}
