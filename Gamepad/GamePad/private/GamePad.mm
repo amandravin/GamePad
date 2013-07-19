@@ -185,8 +185,8 @@
         return 0;
     }
 
-	uint32_t length = (uint32_t)IOHIDValueGetLength(valueRef);
-	const uint8_t* data = IOHIDValueGetBytePtr(valueRef);
+    uint32_t length = (uint32_t)IOHIDValueGetLength(valueRef);
+    const uint8_t* data = IOHIDValueGetBytePtr(valueRef);
     if (length && data)
     {
         int32_t value = 0;

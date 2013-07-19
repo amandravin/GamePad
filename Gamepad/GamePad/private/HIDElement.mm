@@ -100,9 +100,9 @@
         m_nonLinear = IOHIDElementIsNonLinear(elementRef);
         m_preferredState = IOHIDElementHasPreferredState(elementRef);
         m_nullState = IOHIDElementHasNullState(elementRef);
-		m_reportID = IOHIDElementGetReportID(elementRef);
-		m_reportSize = IOHIDElementGetReportSize(elementRef);
-		m_reportCount = IOHIDElementGetReportCount(elementRef);
+        m_reportID = IOHIDElementGetReportID(elementRef);
+        m_reportSize = IOHIDElementGetReportSize(elementRef);
+        m_reportCount = IOHIDElementGetReportCount(elementRef);
         m_unit = IOHIDElementGetUnit(elementRef);
         m_unitExponent = IOHIDElementGetUnitExponent(elementRef);
         m_logicalMin = IOHIDElementGetLogicalMin(elementRef);

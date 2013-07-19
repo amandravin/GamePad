@@ -210,8 +210,8 @@ hid_device_input_value_callback(void* context, IOReturn result, void* sender, IO
         [m_elementDictionary setObject:hidElement forKey:key];
     }
 
-	uint32_t length = (uint32_t)IOHIDValueGetLength(valueRef);
-	const uint8_t* data = IOHIDValueGetBytePtr(valueRef);
+    uint32_t length = (uint32_t)IOHIDValueGetLength(valueRef);
+    const uint8_t* data = IOHIDValueGetBytePtr(valueRef);
     if (length && data)
     {
         int32_t value = 0;
